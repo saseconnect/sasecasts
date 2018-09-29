@@ -1,0 +1,56 @@
+// Base SCSS
+
+// includes the footer as well
+
+// Base Elements
+body{
+  margin:0;
+  @include breakpoint-max($bp-xs){
+
+  }
+}
+
+main{
+  padding-top:36px;
+  @include breakpoint-min($bp-med){
+    padding-top:90px;
+  }
+}
+
+.link{
+  
+  &:link {
+    color:blue;
+  }
+  &:hover {
+    color: orange
+  }
+  &:visited {
+    color:pink;
+  }
+}
+
+// Headings
+
+.heading--lg{
+  @include heading(3rem);
+}
+
+.heading--md{
+  @include heading(2rem);
+}
+
+.heading--xs{
+  @include heading(1.25rem);
+}
+
+.subheading{
+  @include heading(1.5rem);
+}
+
+// Paragraphs
+
+.std-paragraph{
+  @include stdParagraph;
+}
+
