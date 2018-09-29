@@ -1,0 +1,156 @@
+// Nav SCSS
+
+nav{
+  // Nav layout only changes for laptop screens and larger 
+
+  @include shadowMid;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:36px;
+  background-color:lightgrey;
+  z-index:2;
+  @include breakpoint-min($bp-med){
+    @include shadowHigh;
+    display:flex;
+    flex-flow:row nowrap;
+    height:auto;
+    justify-content: space-between;
+    align-items:center;
+  }
+}
+
+// Nav Header SCSS
+
+.nav__header{
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+  justify-content: space-between;
+  width:100%;
+  height:100%;
+  @include breakpoint-min($bp-xs){
+
+  }
+  @include breakpoint-min($bp-med){
+    margin:0;
+    width:35%;
+    justify-content:flex-start;
+  }
+}
+
+
+  // make this square
+.nav__burger{
+  display:flex;
+  flex-flow:column nowrap;
+  align-items:center;
+  width:40px;
+  z-index:2;
+  @include breakpoint-min($bp-med){
+  display:none;
+  }
+}
+
+.burger-line{
+  @include margin(2px,auto);
+  border:1px solid black;
+  width:24px;
+}
+
+.nav__heading{
+  @include helvetica;
+  display:none;
+  font-size:1rem;
+  @include breakpoint-min($bp-med){
+    display:block;
+    align-self:center;
+  }
+}
+
+.nav__home{
+  // This is kind of a hacky way to center the logo
+  display:flex;
+  justify-content:center;
+  margin-right:calc(50% - 93px * .5);
+  @include breakpoint-min($bp-med){
+    @include margin(0,.5rem);
+  }
+}
+
+.logo-img{
+  height:34px;
+  @include breakpoint-min($bp-med){
+    @include margin(22px, 0);
+    height:44px;
+  }
+}
+
+// Nav List SCSS
+
+.nav__list{
+  font-size: 1.5rem;
+  margin:0;
+  background-color:lightgrey;
+  height:0;
+  padding:0;
+  list-style: none;
+  overflow: hidden;
+  transition:height .3s ease-in;
+  @include breakpoint-min($bp-xs){
+    height:100%;
+    width:0;
+  }
+  @include breakpoint-min($bp-med){
+    height:100%;
+    display:flex;
+    flex-flow:row nowrap;
+    width:auto;
+    align-items:center;
+  }
+  
+}
+
+.nav__list.js-toggle{
+  height:10rem;
+  width:100%;
+  @include breakpoint-min($bp-sm){
+
+    width:45%;
+  }
+}
+
+.nav__item{
+  @include padding(.675rem,0);
+  height:0;
+  transition:height .3s ease-in;
+  text-align:center;
+  width:auto;
+  @include breakpoint-min($bp-xs){
+    height:1.75rem;  
+  }
+  @include breakpoint-min($bp-med){
+    @include margin(0,.75rem);
+    height:1.75rem;  
+  }
+  
+}
+
+.js-toggle>.nav__item{
+  height:1.75rem;
+}
+
+.nav__link{
+  @include helvetica;
+  text-decoration: none;
+  color:black;
+}
+
+.nav__link:hover{
+  color:blue;
+}
+
+.nav__link:active{
+  color:pink;
+}
