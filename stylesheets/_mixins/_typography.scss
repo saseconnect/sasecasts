@@ -1,0 +1,32 @@
+// Typography mixins
+
+// fonts
+
+@mixin trebuchet{
+  font: {
+    family: "Trebuchet MS", san-serif;
+    weight: 600;
+  }
+}
+
+
+@mixin helvetica{
+  font: {
+    family: "Helvetica", san-serif;
+  }
+}
+
+// Typographic components
+
+@mixin heading($fontSize){
+  @include margin(.3rem,auto);
+  @include trebuchet;
+  font-size: $fontSize;
+}
+
+@mixin stdParagraph{
+  @include margin(.35rem, auto);
+  @include helvetica;
+  width:85%;
+  text-indent: 25px;
+}

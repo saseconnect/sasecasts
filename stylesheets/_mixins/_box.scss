@@ -1,0 +1,47 @@
+// Box model mixins
+  // includes flexbox mixins, box shadow, and etc
+
+// Margin/ padding utils
+
+@mixin margin($yVal,$xVal){
+  margin-left:$xVal;
+  margin-right:$xVal;
+  margin-top:$yVal;
+  margin-bottom:$yVal;
+}
+
+@mixin padding($yVal, $xVal){
+  padding-left:$xVal;
+  padding-right:$xVal;
+  padding-top:$yVal;
+  padding-bottom:$yVal;
+}
+
+@mixin centerMargin{
+  margin-right:auto;
+  margin-left:auto;
+}
+
+// Flexbox utils
+
+
+// Box shadow utils
+
+@mixin shadowIn{
+  box-shadow: 0rem 0.15rem .20rem .1rem rgba(0,0,0,.05) inset;
+}
+
+// Box shadow "close" to the ground
+
+@mixin shadowLow{
+  box-shadow: 0.1rem 0.1rem .1rem .1rem rgba(0,0,0,.35);
+}
+
+// Box shadow "mid height" from the ground
+@mixin shadowMid{
+  box-shadow: 0.1rem 0.1rem .1rem .15rem rgba(0,0,0,.35);
+}
+
+@mixin shadowHigh{
+  box-shadow: 0.1rem 0.1rem .1rem .2rem rgba(0,0,0,.35);
+}
