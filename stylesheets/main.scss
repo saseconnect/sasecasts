@@ -1,19 +1,19 @@
 /* SASE Casts CSS */
 
-// Mixins
-@import '_mixins/_box.scss';
-@import '_mixins/_breakpoints.scss';
-@import '_mixins/_typography.scss';
+// utils
+@import '_utils/_box.scss';
+@import '_utils/_breakpoints.scss';
+@import '_utils/_typography.scss';
 
 // Modules
 @import '_modules/_buttons.scss';
 @import '_modules/_cards.scss';
 @import '_modules/_colors.scss';
 
-// Partials
+// layout
 
-@import '_partials/_base.scss';
-@import '_partials/_nav.scss';
-@import '_partials/_intro.scss';
-@import '_partials/_recent-content.scss';
-@import '_partials/_footer.scss';
+@import '_layout/_base.scss';
+@import '_layout/_nav.scss';
+@import '_layout/_intro.scss';
+@import '_layout/_recent-content.scss';
+@import '_layout/_footer.scss';
