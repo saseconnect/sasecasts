@@ -1,0 +1,49 @@
+// Grids
+
+@mixin grid-setup{
+  display:grid;
+  grid-column-gap:10px;
+  grid-template-columns: 100%;
+  grid-template-rows: 0 0 0 0;
+  grid-template-areas: 
+                      "head"
+                      "main"
+                      "main"
+                      "footer";
+
+  @include breakpoint-min($bp-med){
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 0 0 0 0;
+    grid-template-areas: 
+                        "head head"
+                        "sidebar main"
+                        "sidebar main"
+                        "footer footer";
+  }
+  @include breakpoint-min($bp-xl){
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 0 0 0 0;
+    grid-template-areas: 
+                        "head head head"
+                        "sidebar main main"
+                        "sidebar main main"
+                        "footer footer footer";    
+  }
+}
+
+@mixin grid--head{
+  grid-area:head;
+
+}
+
+@mixin grid--sidebar{
+  grid-area:sidebar;
+}
+
+@mixin grid--main{
+  grid-area:main;
+}
+
+@mixin grid--footer{
+  grid-area:footer;
+}

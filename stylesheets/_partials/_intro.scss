@@ -1,0 +1,39 @@
+// Intro section SCSS
+
+.intro{
+  width:100%;
+  height:20rem;
+  background: url("_partials/img/back-sm.jpg") no-repeat;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  @include breakpoint-min($bp-xs){
+    background: url("_partials/img/back-lg.jpg") no-repeat;
+    background-size:cover;
+  }
+}
+
+.intro__card{
+  @include margin(0,0);
+  @include shadowLow;
+  background-color:white;
+  max-width:85%;
+  @include breakpoint-min($bp-xs){
+    width:55%;
+  }
+  @include breakpoint-min($bp-med){
+    width:30%;
+  }
+}
+
+.intro__heading{
+  text-align:center;
+}
+
+.intro-paragraph{
+  @include helvetica;
+  @include centerMargin;
+  margin-top:3rem;
+  width:95%;
+  text-indent: 25px;
+}
