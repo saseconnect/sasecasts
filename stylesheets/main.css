@@ -310,7 +310,6 @@ nav {
 .intro {
   width: 100%;
   height: 20rem;
-  background: url("_partials/img/back-sm.jpg") no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,8 +323,17 @@ nav {
 
 @media (min-width: 425px) {
   .intro {
-    background: url("_partials/img/back-lg.jpg") no-repeat;
     background-size: cover;
+  }
+}
+
+.intro--landing {
+  background: url("_layout/img/back-sm.jpg") no-repeat;
+}
+
+@media (min-width: 425px) {
+  .intro--landing {
+    background: url("_layout/img/back-lg.jpg") no-repeat;
   }
 }
 
