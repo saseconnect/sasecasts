@@ -9,10 +9,10 @@
 }
 
 .intro--landing{
-  background: url("_layout/img/back-sm.jpg") no-repeat;
+  background: url("layout/img/back-sm.jpg") no-repeat;
 
   @include breakpoint-min($bp-xs){
-    background: url("_layout/img/back-lg.jpg") no-repeat;
+    background: url("layout/img/back-lg.jpg") no-repeat;
     background-size:cover;
   }
 }

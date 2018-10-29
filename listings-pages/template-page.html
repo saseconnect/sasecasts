@@ -25,7 +25,7 @@
   </div>
 
   <a class="nav__home" href="../index.html">
-    <img class="logo-img" src="../stylesheets/_partials/img/sase-logo.png">
+    <img class="logo-img" src="../stylesheets/layout/img/sase-logo.png">
   </a>
 
   <h2 class="nav__heading">Welcome to SASECasts - SASE’s Digital Content Library</h2>
@@ -87,11 +87,13 @@
         </button>
       </div>
 
-      <select name="category" id="">
-
+      <select class="select--cat" name="category" id="">
+        <option value="cat1">category 1</option>
+        <option value="cat2">category 2</option>
+        <option value="cat3">category 3</option>
       </select>
 
-      <select name="duration" id="">
+      <select class="select--dur" name="duration" id="">
         <option value="30plus">< 30 minutes</option>
         <option value="45plus">< 45 minutes</option>
         <option value="60plus">< 60 minutes</option>
@@ -111,7 +113,8 @@
   </div>
 
   <section class="archive archive--video">
-    <div class="entry entry--video">
+
+    <div class="entry entry--video" data-index="1">
       <img class="entry__thumb" src="" alt="video thumbnail">
       <div class="entry__info">
         <h4 class="entry__title">video title</h4>
@@ -130,8 +133,27 @@
      </div>
     </div>
 
+    <div class="entry entry--video" data-index="2">
+        <img class="entry__thumb" src="" alt="video thumbnail">
+        <div class="entry__info">
+          <h4 class="entry__title">video title</h4>
+          <h5 class="entry__date">01-23-45</h5>
+          <p class="entry__text">
+            video description lorem ipsum video description lorem ipsumvideo description lorem ipsum
+          </p>
+          <span class="row row--tags">
+            <a class="entry__tag">Tag 2</a>
+            <a class="entry__tag">Tag 1</a>
+          </span>
+          <span class="row row--button">
+            <a class="button--std" href="">Share</a>
+            <a class="button--std" href="">Play</a>
+          </span>
+       </div>
+      </div>
+
     <div class="page-scroll">
-      page scroll
+      page scroll here
     </div>
 
   </section>

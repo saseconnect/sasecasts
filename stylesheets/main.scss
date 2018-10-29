@@ -1,20 +1,20 @@
 /* SASE Casts CSS */
 
 // utils
-@import '_utils/_box.scss';
-@import '_utils/_breakpoints.scss';
-@import '_utils/_typography.scss';
+@import 'utils/_box.scss';
+@import 'utils/_breakpoints.scss';
+@import 'utils/_typography.scss';
 
 // Modules
-@import '_modules/_buttons.scss';
-@import '_modules/_cards.scss';
-@import '_modules/_colors.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_cards.scss';
+@import 'modules/_colors.scss';
 
 // layout
 
-@import '_layout/_base.scss';
-@import '_layout/_nav.scss';
-@import '_layout/_intro.scss';
-@import '_layout/_recent-content.scss';
-@import '_layout/_footer.scss';
-@import '_layout/_archive.scss';
+@import 'layout/_base.scss';
+@import 'layout/_nav.scss';
+@import 'layout/_intro.scss';
+@import 'layout/_recent-content.scss';
+@import 'layout/_footer.scss';
+@import 'layout/_archive.scss';
