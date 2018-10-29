@@ -12,13 +12,21 @@ body{
 
 main{
   padding-top:36px;
+  padding-left:0;
+  transition:padding-left .3s ease-in;
   @include breakpoint-min($bp-med){
     padding-top:90px;
   }
 }
 
+nav.js-toggle + main{
+  @include breakpoint-min($bp-sm){
+    padding-left:20rem;
+  }
+}
+
 .link{
-  
+
   &:link {
     color:blue;
   }
@@ -54,3 +62,8 @@ main{
   @include stdParagraph;
 }
 
+// Row containers
+
+.row{
+  display:block;
+}

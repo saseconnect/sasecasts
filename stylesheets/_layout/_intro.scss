@@ -6,9 +6,6 @@
   display:flex;
   justify-content: center;
   align-items: center;
-  @include breakpoint-min($bp-xs){
-    background-size:cover;
-  }
 }
 
 .intro--landing{
@@ -16,7 +13,12 @@
 
   @include breakpoint-min($bp-xs){
     background: url("_layout/img/back-lg.jpg") no-repeat;
+    background-size:cover;
   }
+}
+
+.intro--video-archive{
+  background:#F2FFEF;
 }
 
 .intro__card{

@@ -1,0 +1,93 @@
+// SCSS for video/ audio archiving pages
+
+/* Selectors list (only new selectors are included)
+  // Intro section
+intro--vid-archive (find in intro.scss)
+
+  // Filter bar
+.filter-bar
+  .filter-coll
+    .filter-coll__text
+    .button--filter
+      .icon--sm
+  .collapse-target
+
+  .sort-filter
+
+  // Archive section
+.archive.archive--video
+  .entry.entry--video
+    img.entry__thumb
+    h4.heading--xs
+    h5.entry__date
+    p.entry__text
+    span.row--tags
+      h6.entry__tag
+    span.row--links
+      a.button--std
+
+*/
+
+// Filter Bar SCSS
+
+.filter-bar{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  flex-flow:column nowrap;
+}
+
+.collapse-target{
+  height:0;
+  overflow: hidden;
+  width:100%; // mobile
+}
+
+.sort-filter{
+  width:100%; // mobile
+}
+
+.select--sort{
+  width:65%;
+}
+
+// Archive SCSS
+
+
+// Video Entry SCSS
+
+.entry--video{
+  width:100%;
+  display:flex;
+  flex-flow:row nowrap;
+  align-items:center;
+}
+
+.entry__thumb{
+  width:45%;
+}
+.entry__info{
+  width:65%;
+}
+
+.entry__title{
+  @include trebuchet;
+  @include margin(.1rem,auto);
+  font-size:1.25rem;
+}
+
+.entry__date{
+  @include margin(.5rem,auto);
+}
+
+.row--tags{
+  display:block;
+}
+
+.entry__tag{
+  color:pink;
+}
+
+.row--links{
+  display:block;
+}

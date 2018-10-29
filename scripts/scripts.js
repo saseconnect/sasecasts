@@ -10,6 +10,7 @@ const navList = document.querySelector('.nav__list');
 // Functions
 
 function navCollapse(e){
+  console.log(e);
   if ((e.target.parentElement !== burger) && (e.target !== burger)) return;
   if (e.target===burger){
     let targetEle = document.querySelector(e.target.dataset.target);

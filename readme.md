@@ -3,10 +3,15 @@ Last Updated: 10/29/2018
 
 ## Status
 
+- [GitHub page](https://saseconnect.github.io/sasecasts/?fbclid=IwAR2waOMR1CgCE0v_n3nDMuqmJ0aFBF6EneIQ6fQSdPiSd3D-OsJmzN_ydeI)
+
 - Landing Page
-  - Mobile layout 95% done
-  - Tablet layout 95% done
-  - Laptop/ Desktop layout 95% done
+  - responsive on:
+    a.) mobile devices
+    b.) tablets
+    c.) laptops
+    d.) desktop screens
+  - mostly missing branding/ content
 - General Template Page
 - SASE Podcast Page
   - Started

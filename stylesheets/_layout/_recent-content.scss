@@ -1,4 +1,4 @@
-// Recent Content SCSS 
+// Recent Content SCSS
 
 .recent-content{
   @include centerMargin;
@@ -32,7 +32,7 @@
 
 // iFrame content and containers
 
-.entry--video{
+.latest--video{
   @include margin(1.5rem,auto);
   width:95%;
   height:14rem;
@@ -42,7 +42,7 @@
   }
 }
 
-.entry--audio{
+.latest--audio{
   @include margin(1.75rem,auto);
   width:95%;
   @include breakpoint-min($bp-xs){
@@ -50,10 +50,10 @@
   }
 }
 
-.entry__date{
+.latest__date{
   @include helvetica;
   margin:0;
-  
+
 }
 
 // Media elements
@@ -74,6 +74,6 @@
   background-color:grey;
 }
 
-.button--sub{
+.button--std{
   @include buttonTheme(#c3c3c3);
 }

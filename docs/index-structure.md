@@ -37,7 +37,7 @@ main
 │   │   ├─ hr.heading-box__divider
 │   │   └─ h3.subheading
 │   │
-│   └─ div.entry--video (x 3)
+│   └─ div.latest--video (x 3)
 │       ├─ h4.heading--xs
 │       ├─ span.upload-date
 │       └─ iframe.video--lg
@@ -48,13 +48,13 @@ main
 │   │   ├─ hr.heading-box__divider
 │   │   └─ h3.subheading
 │   │
-│   └─ div.entry--audio (x 3)
+│   └─ div.latest--audio (x 3)
 │       ├─ h4.heading--xs
 │       ├─ span.upload-date
 │       ├─ iframe.audio
 │       └─ span.span-row--button
 │           └─ button.sub-btn (x 3)
-│    
+│
 └─ footer.footer
     ├─ div.icon-row--icon
     │   └─ i.icon--sm (x 3)

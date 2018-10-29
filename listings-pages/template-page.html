@@ -13,11 +13,11 @@
 
 <body>
 
-  
+
 <nav id="nav">
 <header class="nav__header">
 
-  <div class="nav__burger" data-type="burger-collapse" data-target=".nav__list">
+  <div class="nav__burger" data-type="burger-collapse" data-target="#nav">
     <hr class="burger-line burger-line--ccw">
     <hr class="burger-line burger-line--center">
     <hr class="burger-line burger-line--cw">
@@ -25,25 +25,31 @@
   </div>
 
   <a class="nav__home" href="../index.html">
-    <img class="logo-img" src="../stylesheets/_layout/img/sase-logo.png">
+    <img class="logo-img" src="../stylesheets/_partials/img/sase-logo.png">
   </a>
-  
+
   <h2 class="nav__heading">Welcome to SASECasts - SASE’s Digital Content Library</h2>
-  
+
 </header>
 
 <ul class="nav__list">
 
   <li class="nav__item">
-    <a href="webinar.html" class="nav__link">Breaking The Ceiling</a>
+    <a href="../listings-pages/webinar.html" class="nav__link">Breaking The Ceiling</a>
   </li>
-  
+
   <li class="nav__item">
-    <a href="casts.html" class="nav__link">SASE Moments</a>
+    <a href="../listings-pages/casts.html" class="nav__link">SASE Moments</a>
   </li>
-  
+
+  <!--
   <li class="nav__item">
     <a href="https://saseconnect.org/" class="nav__link">SASE Connect</a>
+  </li>
+  -->
+
+  <li class="nav__item">
+      <a href="../listings-pages/template-page.html" class="nav__link">General Template</a>
   </li>
 
 </ul>
@@ -53,6 +59,85 @@
 
 
 <main>
+  <section class="intro intro--vid-archive">
+
+    <div class="intro__card">
+      <h1 class="intro__heading heading--lg">SASE Casts</h1>
+
+      <p class="intro-paragraph">
+          Lorem ipsum dolor sit amet, <a href="https://saseconnect.org/">consectetur</a>  adipiscing elit. Morbi pulvinar convallis nunc sed molestie. Nunc porttitor posuere velit et fermentum.
+      </p>
+    </div>
+  </section>
+
+  <div class="filter-bar">
+    <div class="filter-coll" data-target=".collapse-target"> <!-- hidden on larger screens -->
+      <span class="filter-coll__text">
+        Browse For More.
+      </span>
+      <img class="icon--sm" src="../img/caret-down-solid.svg">
+    </div>
+
+    <div class="collapse-target">
+      <div class="search-ctr">
+        <input type="text" class="filter__search">
+
+        <button class="button--search">
+          search
+        </button>
+      </div>
+
+      <select name="category" id="">
+
+      </select>
+
+      <select name="duration" id="">
+        <option value="">< 30 minutes</option>
+        <option value="date-desc">< 45 minutes</option>
+        <option value="mercedes">< 60 minutes</option>
+      </select>
+    </div>
+
+
+    <div class="sort-filter">
+      <select class="select--sort" name="sort-by" id="">
+        <option value="date-asc">Date uploaded(ascending)</option>
+        <option value="date-desc">Date uploaded(descending)</option>
+        <option value="mercedes">Alphabetical</option>
+      </select>
+    </div>
+
+
+  </div>
+
+  <section class="archive archive--video">
+    <div class="entry entry--video">
+      <img class="entry__thumb" src="" alt="video thumbnail">
+      <div class="entry__info">
+        <h4 class="entry__title">video title</h4>
+        <h5 class="entry__date">01-23-45</h5>
+        <p class="entry__text">
+          video description lorem ipsum video description lorem ipsumvideo description lorem ipsum
+        </p>
+        <span class="row row--tags">
+          <a class="entry__tag">fun</a>
+          <a class="entry__tag">memes</a>
+        </span>
+        <span class="row row--button">
+          <a class="button--std" href="">Share</a>
+          <a class="button--std" href="">Play</a>
+        </span>
+     </div>
+    </div>
+
+    <div class="page-scroll">
+      page scroll
+    </div>
+
+  </section>
+
+
+
 
 </main>
 
@@ -66,7 +151,7 @@
 </div>
 
 <p class="text--short">
-  Copyright © 2018 
+  Copyright © 2018
 Society of Asian Scientists and Engineers (SASE)
 All Rights Reserved.
 </p>

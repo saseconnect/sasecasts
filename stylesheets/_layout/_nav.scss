@@ -1,8 +1,6 @@
 // Nav SCSS
 
 nav{
-  // Nav layout only changes for laptop screens and larger 
-
   @include shadowMid;
   position:fixed;
   top:0;
@@ -90,17 +88,18 @@ nav{
 // Nav List SCSS
 
 .nav__list{
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   margin:0;
   background-color:lightgrey;
   height:0;
   padding:0;
   list-style: none;
   overflow: hidden;
-  transition:height .3s ease-in;
-  @include breakpoint-min($bp-xs){
-    height:100%;
+  transition:height .3s ease-in, width .3s ease-in;
+  @include breakpoint-min($bp-sm){
+    height:100vh;
     width:0;
+    position:fixed;
   }
   @include breakpoint-min($bp-med){
     height:100%;
@@ -108,41 +107,49 @@ nav{
     flex-flow:row nowrap;
     width:auto;
     align-items:center;
+    position:static;
   }
-  
+
 }
 
-.nav__list.js-toggle{
+.js-toggle .nav__list{
   height:10rem;
   width:100%;
+  transition:height .3s ease-in, width .3s ease-in;
   @include breakpoint-min($bp-sm){
-
-    width:45%;
+    height:100vh;
+    width:20rem;
   }
 }
 
 .nav__item{
   @include padding(.675rem,0);
-  height:0;
-  transition:height .3s ease-in;
+  display:flex;
+  align-items:center;
+  height:1.75rem;
   text-align:center;
   width:auto;
-  @include breakpoint-min($bp-xs){
-    height:1.75rem;  
+  overflow: hidden;
+  @include breakpoint-min($bp-sm){
+    width:0;
   }
   @include breakpoint-min($bp-med){
     @include margin(0,.75rem);
-    height:1.75rem;  
+    width:auto;
   }
-  
+
 }
 
-.js-toggle>.nav__item{
-  height:1.75rem;
+.js-toggle .nav__list>.nav__item{
+  @include padding(.675rem,0);
+  @include breakpoint-min($bp-sm){
+    width:auto;
+  }
 }
 
 .nav__link{
   @include helvetica;
+  overflow:hidden;
   text-decoration: none;
   color:black;
 }

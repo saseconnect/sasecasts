@@ -13,11 +13,11 @@
 
 <body>
 
-  
+
 <nav id="nav">
 <header class="nav__header">
 
-  <div class="nav__burger" data-type="burger-collapse" data-target=".nav__list">
+  <div class="nav__burger" data-type="burger-collapse" data-target="#nav">
     <hr class="burger-line burger-line--ccw">
     <hr class="burger-line burger-line--center">
     <hr class="burger-line burger-line--cw">
@@ -27,7 +27,7 @@
   <a class="nav__home" href="index.html">
     <img class="logo-img" src="stylesheets/_layout/img/sase-logo.png">
   </a>
-  
+
   <h2 class="nav__heading">Welcome to SASECasts - SASE’s Digital Content Library</h2>
 
 </header>
@@ -37,13 +37,18 @@
   <li class="nav__item">
     <a href="listings-pages/webinar.html" class="nav__link">Breaking The Ceiling</a>
   </li>
-  
+
   <li class="nav__item">
     <a href="listings-pages/casts.html" class="nav__link">SASE Moments</a>
   </li>
-  
+  <!--
   <li class="nav__item">
     <a href="https://saseconnect.org/" class="nav__link">SASE Connect</a>
+  </li>
+  -->
+
+  <li class="nav__item">
+      <a href="listings-pages/template-page.html" class="nav__link">General Template</a>
   </li>
 
 </ul>
@@ -75,90 +80,90 @@
     </div>
 
 
-    <div class="entry--video">
+    <div class="latest--video">
       <h4 class="heading--xs">Video Title</h4>
 
-      <p class="entry__date">01-23-45</p>
+      <h5 class="latest__date">01-23-45</h5>
 
       <iframe class="video--lg "width="560" height="315" src="https://www.youtube.com/embed/cUOeUT3jZWM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
     </div>
 
 
-    <div class="entry--video">
+    <div class="latest--video">
       <h4 class="heading--xs">Video Title</h4>
 
-      <p class="entry__date">01-23-45</p>
+      <h5 class="latest__date">01-23-45</h5>
 
       <iframe class="video--lg "width="560" height="315" src="https://www.youtube.com/embed/cUOeUT3jZWM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
     </div>
 
 
-    <div class="entry--video">
+    <div class="latest--video">
       <h4 class="heading--xs">Video Title</h4>
 
-      <span class="entry__date" slot="date">01-23-45</span>
+      <span class="latest__date" slot="date">01-23-45</span>
 
       <iframe class="video--lg "width="560" height="315" src="https://www.youtube.com/embed/cUOeUT3jZWM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
     </div>
 
   </section>
-  
+
   <section class="recent-content">
     <div class="heading-box">
         <h2 class="heading--md">Latest Casts</h2>
-  
+
         <hr class="heading-box__divider">
-  
+
         <h3 class="subheading">SASE Moments</h3>
       </div>
 
-    <div class="entry--audio">
+    <div class="latest--audio">
       <h4 class="heading--xs">Pocast Title</h4>
 
-      <p class="entry__date">01-23-45</p>
+      <h5 class="latest__date">01-23-45</h5>
 
       <iframe class="audio" style="border: none" src="//html5-player.libsyn.com/embed/episode/id/6840390/height/90/theme/custom/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-      <span class="span-row--button">
-        <button class="button--sub">Sub 1</button>
-        <button class="button--sub">Sub 2</button>
-        <button class="button--sub">Sub 3</button>
+      <span class="row row--button">
+        <button class="button--std">Sub 1</button>
+        <button class="button--std">Sub 2</button>
+        <button class="button--std">Sub 3</button>
       </span>
     </div>
 
-    <div class="entry--audio">
+    <div class="row latest--audio">
       <h4 class="heading--xs">Podcast Title</h4>
 
-      <p class="entry__date">01-23-45</p>
+      <h5 class="latest__date">01-23-45</h5>
 
       <iframe class="audio" style="border: none" src="//html5-player.libsyn.com/embed/episode/id/6840390/height/90/theme/custom/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-      <span class="span-row--button">
-        <button class="button--sub">Sub 1</button>
-        <button class="button--sub">Sub 2</button>
-        <button class="button--sub">Sub 3</button>
+      <span class="row row--button">
+        <button class="button--std">Sub 1</button>
+        <button class="button--std">Sub 2</button>
+        <button class="button--std">Sub 3</button>
       </span>
 
     </div>
 
-    <div class="entry--audio">
+    <div class="latest--audio">
       <h4 class="heading--xs">Podcast Title</h4>
 
-      <p class="entry__date">01-23-45</p>
-      
+      <h5 class="latest__date">01-23-45</h5>
+
       <iframe class="audio" style="border: none" src="//html5-player.libsyn.com/embed/episode/id/6840390/height/90/theme/custom/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/direction/forward/render-playlist/no/custom-color/000000/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
 
-      <span class="span-row--button">
-        <button class="button--sub">Sub 1</button>
-        <button class="button--sub">Sub 2</button>
-        <button class="button--sub">Sub 3</button>
+      <span class="row row--button">
+        <button class="button--std">Sub 1</button>
+        <button class="button--std">Sub 2</button>
+        <button class="button--std">Sub 3</button>
       </span>
 
-    </div>    
- 
+    </div>
+
 
   </section>
 
@@ -174,7 +179,7 @@
 </div>
 
 <p class="text--short">
-  Copyright © 2018 
+  Copyright © 2018
 Society of Asian Scientists and Engineers (SASE)
 All Rights Reserved.
 </p>
