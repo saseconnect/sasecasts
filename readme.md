@@ -1,5 +1,5 @@
 # SASECasts read me
-Last Updated: 9/28/2018
+Last Updated: 10/29/2018
 
 ## Status
 
@@ -20,9 +20,9 @@ Last Updated: 9/28/2018
 
 ## Code Style
 
-HTML and CSS classes/ elements are named with BEM([Block Element Modifier](http://getbem.com/introduction/)) notation.
+HTML and CSS classes elements are named with [Block Element Modifier](http://getbem.com/introduction/) (BEM) notation.
 
 ## Documentation
 
-- [Implementation Notes](docs/implementation-notes)
-- [index.html structure](docs/index-structure)
+- [Implementation Notes](docs/implementation-notes.md)
+- [index.html structure](docs/index-structure.md)
