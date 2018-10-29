@@ -21,12 +21,12 @@
 
 ### Directory notes
 
-- `_mixins` is where mixins are
+- `_utils` is where mixins are
   - basically just a shortcut for not repeating the same CSS values over and over
   - `breakpoints.scss` is here
 - `_modules` is for actual components
   - buttons, cards, CSS Grid templates at some point, and colors are here
-- `_partials` is where CSS for the actual sections of the HTML is
+- `_layout` is where CSS for the actual sections of the HTML is
   - includes an image directory
 
 ### General Notes
@@ -36,7 +36,7 @@
 - Current colors are placeholders
 - Need to make flexbox mixins
   - repeating the same commands and they're relatively the s ame
-- 
+
 
 
 ## JavaScript Notes

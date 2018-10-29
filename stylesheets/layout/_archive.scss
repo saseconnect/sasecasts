@@ -61,13 +61,14 @@ intro--vid-archive (find in intro.scss)
   display:flex;
   flex-flow:row nowrap;
   align-items:center;
+  justify-content: space-evenly;
 }
 
 .entry__thumb{
   width:45%;
 }
 .entry__info{
-  width:65%;
+  width:45%;
 }
 
 .entry__title{
@@ -77,7 +78,11 @@ intro--vid-archive (find in intro.scss)
 }
 
 .entry__date{
-  @include margin(.5rem,auto);
+  @include margin(.1rem,auto);
+}
+
+.entry__text{
+  display:none; // on mobile
 }
 
 .row--tags{
