@@ -9,30 +9,30 @@
   justify-content: space-between;
 
   @include breakpoint-min($bp-sm){
-    height:2rem;
-    flex-flow:row nowrap;
+    height: auto;
+    flex-flow: row nowrap;
     justify-content: center;
-    align-items:center;
-    background-color:lightgrey;
+    align-items: center;
+    background-color: lightgrey;
   }
 }
 
 .filter-coll{
   @include padding(5px, 5px);
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
-  background-color:lightgrey;
+  background-color: lightgrey;
   box-shadow: 0 0.2rem 0.2rem inset rgba(0,0,0,0.12);
 
   @include breakpoint-min($bp-sm){
-    display:none;
+    display: none;
   }
 }
 
 .filter-coll__text{
   @include helvetica;
-  display:inline-block;
+  display: inline-block;
   font-size: 1.25rem;
 }
 
@@ -40,7 +40,7 @@
 .collapse-target{
   height: 0;
   width: 100%;
-  display:flex;
+  display: flex;
   justify-content: center;
   flex-flow: column nowrap;
   overflow: hidden;
@@ -56,9 +56,9 @@
 }
 
 .collapse-target.js-toggle{
-  padding-top:2px;
-  padding-bottom:5px;
-  height:auto;
+  padding-top: 2px;
+  padding-bottom: 5px;
+  height: auto;
 
   @include breakpoint-min($bp-sm){
     padding: 0;
@@ -71,7 +71,7 @@
   display: block;
 
   @include breakpoint-min($bp-sm){
-    width:auto;
+    width: auto;
   }
 }
 
@@ -80,9 +80,8 @@
 }
 
 .button--search{
-  @include buttonStatic;
-  background-color:grey;
-  border:0;
+  @include buttonTheme();
+  border: none;
 }
 
 .select{
@@ -108,8 +107,8 @@
 
 .sort-filter{
   @include margin(10px, 5px);
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 
   @include breakpoint-min($bp-sm){
      margin:0;
@@ -126,7 +125,7 @@
 
 .spacer{
   @include margin(0, auto);
-  width:95%;
+  width: 95%;
 
   @include breakpoint-min($bp-sm){
     display: none;
@@ -140,65 +139,71 @@
 
 .archive{
   @include margin(0.5rem, auto);
-  width:90%;
-  display:flex;
-  align-items:center;
-  flex-flow:column nowrap;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  flex-flow: column nowrap;
   justify-content: space-around;
 
   @include breakpoint-min($bp-sm){
-    width:75%;
+    width: 75%;
+  }
+  @include breakpoint-min($bp-md){
+    width: 50%;
+  }
+  @include breakpoint-min($bp-xl){
+    width: 28%;
   }
 }
 
 .entry{
   @include margin(0.5rem, 0);
-  @include padding(0.25rem,0);
+  @include padding(0.25rem, 0);
   width:100%;
 }
 
 .entry--video{
-  display:flex;
-  align-items:center;
-  flex-flow:row nowrap;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
 }
 
 .entry__thumb{
-  width:45%;
+  width: 45%;
 }
 .entry__info{
-  width:45%;
+  width: 45%;
 }
 
 .entry__title{
   @include trebuchet;
-  @include margin(.1rem,auto);
-  font-size:1.25rem;
+  @include margin(.1rem, auto);
+  font-size: 1.25rem;
 }
 
 .entry__date{
-  @include margin(0.1rem,auto);
+  @include margin(0.1rem, auto);
 }
 
 .entry__text{
-  display:none;
+  display: none;
 
   @include breakpoint-min($bp-sm){
-    display:block;
+    display: block;
   }
 }
 
 .row--tags{
-  display:block;
+  display: block;
 }
 
 .entry__tag{
-  color:pink;
+  color: orange;
 }
 
 .row--links{
-  display:block;
+  display: block;
 }
 
 .row--button{
@@ -208,9 +213,9 @@
 .page-scroll{
 
   @include breakpoint-min($bp-sm){
-    width:75%;
+    width: 75%;
   }
   @include breakpoint-min($bp-xl){
-    width:45%;
+    width: 45%;
   }
 }

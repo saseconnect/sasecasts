@@ -1,9 +1,9 @@
 // Intro section SCSS
 
 .intro{
-  width:100%;
-  height:20rem;
-  display:flex;
+  width: 100%;
+  height: 20rem;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -13,35 +13,35 @@
 
   @include breakpoint-min($bp-xs){
     background: url("layout/img/back-lg.jpg") no-repeat;
-    background-size:cover;
+    background-size: cover;
   }
 }
 
 .intro--vid-archive{
-  background:#F2FFEF;
+  background: #F2FFEF;
 }
 
 .intro__card{
   @include margin(0,0);
   @include shadowLow;
-  background-color:white;
-  max-width:85%;
+  background-color: white;
+  max-width: 85%;
   @include breakpoint-min($bp-xs){
-    width:55%;
+    width: 55%;
   }
-  @include breakpoint-min($bp-med){
-    width:30%;
+  @include breakpoint-min($bp-md){
+    width: 30%;
   }
 }
 
 .intro__heading{
-  text-align:center;
+  text-align: center;
 }
 
 .intro-paragraph{
   @include helvetica;
   @include centerMargin;
-  margin-top:3rem;
-  width:95%;
+  margin-top: 3rem;
+  width: 95%;
   text-indent: 25px;
 }

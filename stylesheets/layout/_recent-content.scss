@@ -2,31 +2,33 @@
 
 .recent-content{
   @include centerMargin;
-  padding-top:1rem;
+  padding-top: 1rem;
   width: 100%;
-  @include breakpoint-min($bp-med){
-    width:55%;
+
+  @include breakpoint-min($bp-md){
+    width: 55%;
   }
 }
 
 .recent-content:last-of-type{
-  margin-bottom:10rem;
-  margin-top:5rem;
+  margin-bottom: 10rem;
+  margin-top: 5rem;
 }
 
 // heading box
 
 .heading-box{
   @include margin(1.75rem, auto);
-  width:95%;
+  width: 95%;
+
   @include breakpoint-min($bp-xs){
-    width:85%;
+    width: 85%;
   }
 
 }
 
 .heading-box__divider{
-  @include margin(.125rem,auto);
+  @include margin(.125rem, auto);
 }
 
 
@@ -34,25 +36,27 @@
 
 .latest--video{
   @include margin(1.5rem,auto);
-  width:95%;
-  height:14rem;
+  width: 95%;
+  height: 14rem;
+
   @include breakpoint-min($bp-xs){
-    width:55%;
-    height:20rem;
+    width: 55%;
+    height: 20rem;
   }
 }
 
 .latest--audio{
-  @include margin(1.75rem,auto);
-  width:95%;
+  @include margin(1.75rem, auto);
+  width: 95%;
+
   @include breakpoint-min($bp-xs){
-    width:75%;
+    width: 75%;
   }
 }
 
 .latest__date{
   @include helvetica;
-  margin:0;
+  margin: 0;
 
 }
 
@@ -60,20 +64,21 @@
 
 .video--lg{
   @include centerMargin;
-  background-color:grey;
-  width:95%;
-  height:85%;
-  display:block;
+  background-color: grey;
+  width: 95%;
+  height: 85%;
+  display: block;
+
   @include breakpoint-min($bp-xs){
-    width:100%;
-    height:85%;
+    width: 100%;
+    height: 85%;
   }
 }
 
 .audio{
-  background-color:grey;
+  background-color: grey;
 }
 
 .button--std{
-  @include buttonTheme(#c3c3c3);
+  @include buttonTheme();
 }

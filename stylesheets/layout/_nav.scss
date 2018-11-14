@@ -2,19 +2,19 @@
 
 nav{
   @include shadowMid;
-  position:fixed;
-  top:0;
-  left:0;
-  width:100%;
-  height:36px;
-  z-index:2;
-  background-color:lightgrey;
-  @include breakpoint-min($bp-med){
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 36px;
+  z-index: 2;
+  background-color: lightgrey;
+  @include breakpoint-min($bp-md){
     @include shadowHigh;
-    height:auto;
-    display:flex;
-    flex-flow:row nowrap;
-    align-items:center;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
     justify-content: space-between;
   }
 }
@@ -22,66 +22,66 @@ nav{
 // Nav Header SCSS
 
 .nav__header{
-  width:100%;
-  height:100%;
-  display:flex;
-  flex-flow:row nowrap;
-  align-items:center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   justify-content: space-between;
   @include breakpoint-min($bp-xs){
 
   }
-  @include breakpoint-min($bp-med){
-    margin:0;
-    width:35%;
-    justify-content:flex-start;
+  @include breakpoint-min($bp-md){
+    margin: 0;
+    width: 35%;
+    justify-content: flex-start;
   }
 }
 
 
   // make this square
 .nav__burger{
-  width:40px;
-  z-index:2;
-  display:flex;
-  flex-flow:column nowrap;
-  align-items:center;
-  @include breakpoint-min($bp-med){
-    display:none;
+  width: 40px;
+  z-index: 2;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  @include breakpoint-min($bp-md){
+    display: none;
   }
 }
 
 .burger-line{
   @include margin(2px,auto);
-  width:24px;
-  border:1px solid black;
+  width: 24px;
+  border: 1px solid black;
 }
 
 .nav__heading{
   @include helvetica;
-  display:none;
-  font-size:1rem;
-  @include breakpoint-min($bp-med){
-    display:block;
-    align-self:center;
+  display: none;
+  font-size: 1rem;
+  @include breakpoint-min($bp-md){
+    display: block;
+    align-self: center;
   }
 }
 
 .nav__home{
   // This is kind of a hacky way to center the logo
-  display:flex;
-  justify-content:center;
-  margin-right:calc(50% - 93px * .5);
-  @include breakpoint-min($bp-med){
-    @include margin(0,.5rem);
+  display: flex;
+  justify-content: center;
+  margin-right: calc(50% - 93px * 0.5);
+  @include breakpoint-min($bp-md){
+    @include margin(0, 0.5rem);
   }
 }
 
 .logo-img{
-  height:34px;
-  @include breakpoint-min($bp-med){
+  height: 34px;
+  @include breakpoint-min($bp-md){
     @include margin(22px, 0);
-    height:44px;
+    height: 44px;
   }
 }
 
@@ -89,78 +89,78 @@ nav{
 
 .nav__list{
   @include padding(0px, 10px);
-  background-color:lightgrey;
-  margin:0;
-  height:0;
+  background-color :lightgrey;
+  margin: 0;
+  height: 0;
   list-style: none;
   overflow: hidden;
   font-size: 1.25rem;
-  transition:height .3s ease-in, width .3s ease-in;
+  transition: height 0.3s ease-in, width 0.3s ease-in;
   @include breakpoint-min($bp-sm){
-    height:100vh;
-    width:0;
-    position:fixed;
+    height: 100vh;
+    width: 0;
+    position: fixed;
   }
-  @include breakpoint-min($bp-med){
-    height:100%;
-    width:auto;
-    margin-right:.675rem;
-    position:static;
-    display:flex;
-    flex-flow:row nowrap;
-    align-items:center;
+  @include breakpoint-min($bp-md){
+    height: 100%;
+    width: auto;
+    margin-right: 0.675rem;
+    position: static;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
   }
 
 }
 
 .js-toggle .nav__list{
-  height:auto;
-  width:100%;
-  transition:height .3s ease-in, width .3s ease-in;
+  height: auto;
+  width: 100%;
+  transition: height 0.3s ease-in, width 0.3s ease-in;
   @include breakpoint-min($bp-sm){
-    height:100vh;
-    width:20rem;
+    height: 100vh;
+    width: 20rem;
   }
 }
 
 .nav__item{
-  @include padding(.675rem,0);
-  height:1.75rem;
-  width:auto;
-  display:flex;
-  align-items:center;
-  text-align:center;
+  @include padding(0.675rem, 0);
+  height: 1.75rem;
+  width: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
   overflow: hidden;
   @include breakpoint-min($bp-sm){
-    width:0;
+    width: 0;
   }
-  @include breakpoint-min($bp-med){
-    @include margin(0,.75rem);
-    width:auto;
+  @include breakpoint-min($bp-md){
+    @include margin(0, 0.75rem);
+    width: auto;
   }
 
 }
 
 .js-toggle .nav__list>.nav__item{
-  @include padding(.675rem,0);
+  @include padding(0.675rem, 0);
   @include breakpoint-min($bp-sm){
-    width:auto;
+    width: auto;
   }
 }
 
 .nav__link{
   @include helvetica;
-  width:100%;
-  color:black;
-  text-align:left;
-  overflow:hidden;
+  width: 100%;
+  color: black;
+  text-align: left;
+  overflow: hidden;
   text-decoration: none;
 }
 
 .nav__link:hover{
-  color:blue;
+  color: blue;
 }
 
 .nav__link:active{
-  color:pink;
+  color: pink;
 }

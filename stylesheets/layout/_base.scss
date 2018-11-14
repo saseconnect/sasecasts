@@ -4,37 +4,37 @@
 
 // Base Elements
 body{
-  margin:0;
+  margin: 0;
   @include breakpoint-max($bp-xs){
 
   }
 }
 
 main{
-  padding-top:36px;
-  padding-left:0;
-  transition:padding-left .3s ease-in;
-  @include breakpoint-min($bp-med){
-    padding-top:90px;
+  padding-top: 36px;
+  padding-left: 0;
+  transition: padding-left .3s ease-in;
+  @include breakpoint-min($bp-md){
+    padding-top: 90px;
   }
 }
 
 nav.js-toggle + main{
   @include breakpoint-min($bp-sm){
-    padding-left:20rem;
+    padding-left: 20rem;
   }
 }
 
 .link{
 
   &:link {
-    color:blue;
+    color: blue;
   }
   &:hover {
-    color: orange
+    color:  orange
   }
   &:visited {
-    color:pink;
+    color: pink;
   }
 }
 
@@ -65,10 +65,10 @@ nav.js-toggle + main{
 // Row containers
 
 .row{
-  display:block;
+  display: block;
 }
 
 .icon--sm{
-  height:1rem;
-  max-width:1rem;
+  height: 1rem;
+  max-width: 1rem;
 }

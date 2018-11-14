@@ -2,19 +2,19 @@
 
 @mixin grid-setup{
   display:grid;
-  grid-column-gap:10px;
+  grid-column-gap: 10px;
   grid-template-columns: 100%;
   grid-template-rows: 0 0 0 0;
-  grid-template-areas: 
+  grid-template-areas:
                       "head"
                       "main"
                       "main"
                       "footer";
 
-  @include breakpoint-min($bp-med){
+  @include breakpoint-min($bp-md){
     grid-template-columns: 50% 50%;
     grid-template-rows: 0 0 0 0;
-    grid-template-areas: 
+    grid-template-areas:
                         "head head"
                         "sidebar main"
                         "sidebar main"
@@ -23,27 +23,27 @@
   @include breakpoint-min($bp-xl){
     grid-template-columns: 30% 30% 30%;
     grid-template-rows: 0 0 0 0;
-    grid-template-areas: 
+    grid-template-areas:
                         "head head head"
                         "sidebar main main"
                         "sidebar main main"
-                        "footer footer footer";    
+                        "footer footer footer";
   }
 }
 
 @mixin grid--head{
-  grid-area:head;
+  grid-area: head;
 
 }
 
 @mixin grid--sidebar{
-  grid-area:sidebar;
+  grid-area: sidebar;
 }
 
 @mixin grid--main{
-  grid-area:main;
+  grid-area: main;
 }
 
 @mixin grid--footer{
-  grid-area:footer;
+  grid-area: footer;
 }

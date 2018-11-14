@@ -1,23 +1,23 @@
 // Mixins for buttons
 
-@mixin buttonTheme($color){
+@mixin buttonTheme($color: #007bff){
   @include buttonStatic;
-  background-color:$color;
+  background-color: $color;
+
   &:hover {
-    background-color: darken($color,15%);
+    background-color: darken($color, 15%);
   }
 
 }
 
 @mixin buttonStatic{
   @include margin(0px, 5px);
-  @include padding(5px, 5px);
+  @include padding(7px, 5px);
   @include shadowMid;
+  @include helvetica;
   width: 6rem;
   height: 1.75rem;
-  border-radius:3px;
-  color:white;
-  &:hover {
-    @include shadowLow;
-  }
+  border-radius: 3px;
+  color: white;
+  text-decoration: none;
 }
