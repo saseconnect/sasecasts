@@ -1,40 +1,31 @@
 // SCSS for video/ audio archiving pages
 
-/* Selectors list (only new selectors are included)
-  // Intro section
-intro--vid-archive (find in intro.scss)
-
-  // Filter bar
-.filter-bar
-  .filter-coll
-    .filter-coll__text
-    .button--filter
-      .icon--sm
-  .collapse-target
-
-  .sort-filter
-
-  // Archive section
-.archive.archive--video
-  .entry.entry--video
-    img.entry__thumb
-    h4.heading--xs
-    h5.entry__date
-    p.entry__text
-    span.row--tags
-      h6.entry__tag
-    span.row--links
-      a.button--std
-
-*/
-
 // Filter Bar SCSS
 
+.filter-bar{
+  width:100%;
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content: space-between;
+
+  @include breakpoint-min($bp-sm){
+    height:2rem;
+    flex-flow:row nowrap;
+    justify-content: center;
+    align-items:center;
+    background-color:lightgrey;
+  }
+}
+
 .filter-coll{
+  @include padding(3px, 3px);
   height:1.5rem;
   display:flex;
   align-items:center;
   justify-content: space-between;
+  background-color:lightgrey;
+  box-shadow: 0 0.2rem .2rem inset rgba(0,0,0,0.12);
+
   @include breakpoint-min($bp-sm){
     display:none;
   }
@@ -44,59 +35,84 @@ intro--vid-archive (find in intro.scss)
   display:inline-block;
 }
 
-.filter-bar{
-  background-color:lightgrey;
-  width:100%;
+
+.collapse-target{
+  height: 0;
+  width: 100%;
   display:flex;
-  justify-content: space-between;
-  flex-flow:column nowrap;
+  justify-content: center;
+  flex-flow: column nowrap;
+  overflow: hidden;
+  background-color: lightgrey;
+
   @include breakpoint-min($bp-sm){
-    flex-flow:row nowrap;
-    justify-content: center;
-    height:2rem;
-    align-items:center;
+    padding: 0;
+    width: 75%;
+    height: auto;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
   }
 }
 
-.collapse-target{
-  height:0;
-  overflow: hidden;
-  width:100%;
+.collapse-target.js-toggle{
+  padding-top:2px;
+  padding-bottom:5px;
+  height:auto;
+
   @include breakpoint-min($bp-sm){
-    height:auto;
-    width:75%;
+    padding: 0;
   }
 }
 .search-ctr{
-  width:50%;
-  display:inline-block;
+  @include margin(3px, 5px);
+  width: 100%;
+  display: block;
+
+  @include breakpoint-min($bp-sm){
+    width:auto;
+  }
 }
 .select--cat{
-  display:inline-block;
-  @include breakpoint-min($bp-sm){
+  @include margin(3px, 5px);
 
+  @include breakpoint-min($bp-sm){
+    display: inline-block;
   }
 }
 
 .select--dur{
-  display:inline-block;
-  @include breakpoint-min($bp-sm){
+  @include margin(3px, 5px);
 
+  @include breakpoint-min($bp-sm){
+    display: inline-block;
   }
 }
 
 .sort-filter{
-  width:100%;
+  @include margin(10px, 5px);
   height:1.5rem;
-   @include breakpoint-min($bp-sm){
-    width:25%;
+  display:flex;
+  justify-content:center;
+
+  @include breakpoint-min($bp-sm){
+     margin:0;
   }
 }
 
 .select--sort{
-  width:65%;
+  width:100%;
+
   @include breakpoint-min($bp-sm){
-    width:25%;
+    width:9rem;
+  }
+}
+
+.spacer{
+  @include margin(0, auto);
+  width:95%;
+
+  @include breakpoint-min($bp-sm){
+    display: none;
   }
 }
 
@@ -109,9 +125,10 @@ intro--vid-archive (find in intro.scss)
   @include margin(.5rem, auto);
   width:90%;
   display:flex;
+  align-items:center;
   flex-flow:column nowrap;
   justify-content: space-around;
-  align-items:center;
+
   @include breakpoint-min($bp-sm){
     width:75%;
   }
@@ -125,8 +142,8 @@ intro--vid-archive (find in intro.scss)
 
 .entry--video{
   display:flex;
-  flex-flow:row nowrap;
   align-items:center;
+  flex-flow:row nowrap;
   justify-content: space-evenly;
 }
 
@@ -149,6 +166,7 @@ intro--vid-archive (find in intro.scss)
 
 .entry__text{
   display:none;
+
   @include breakpoint-min($bp-sm){
     display:block;
   }
