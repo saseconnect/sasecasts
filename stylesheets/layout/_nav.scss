@@ -150,9 +150,11 @@ nav{
 
 .nav__link{
   @include helvetica;
+  width:100%;
+  color:black;
+  text-align:left;
   overflow:hidden;
   text-decoration: none;
-  color:black;
 }
 
 .nav__link:hover{

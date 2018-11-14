@@ -5,7 +5,7 @@
 
 const burger = document.querySelector('div.nav__burger');
 const collapseRow = document.querySelector('.filter-coll');
-
+const duration = document.getElementById('duration');
 // Functions
 
 function navCollapse(e) {
@@ -32,7 +32,13 @@ function filterCollapse(e) {
   }
 }
 
+function readSelect(e) {
+  console.log(e.target.value);
+  if (e.target.value === '') return;
+}
+
 // Event Listeners
 
 burger.addEventListener('click',navCollapse);
 collapseRow.addEventListener('click', filterCollapse);
+duration.addEventListener('change', readSelect);

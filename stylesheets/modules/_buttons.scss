@@ -10,12 +10,12 @@
 }
 
 @mixin buttonStatic{
-  @include margin(0,5px);
+  @include margin(0px, 5px);
+  @include padding(5px, 5px);
   @include shadowMid;
   width: 6rem;
   height: 1.75rem;
   border-radius:3px;
-  border: 1.5px solid white;
   color:white;
   &:hover {
     @include shadowLow;

@@ -87,13 +87,15 @@
         </button>
       </div>
 
-      <select class="select--cat" name="category" id="">
-        <option value="cat1">category 1</option>
-        <option value="cat2">category 2</option>
-        <option value="cat3">category 3</option>
+      <select class="select select--cat" name="category" id="category">
+        <option value="">Category</option>
+        <option class="cat-child" value="cat1">Career Talks</option>
+        <option value="cat2">Personal Development</option>
+        <option value="cat3">Just talking</option>
       </select>
 
-      <select class="select--dur" name="duration" id="">
+      <select class="select select--dur" name="duration" id="duration">
+          <option value="">Duration</option>
         <option value="30plus">< 30 minutes</option>
         <option value="45plus">< 45 minutes</option>
         <option value="60plus">< 60 minutes</option>
@@ -102,7 +104,8 @@
 
 
     <div class="sort-filter">
-      <select class="select--sort" name="sort-by" id="">
+      <select class="select select--sort" name="sort-by" id="sort-by">
+        <option value="date-asc">Sort By</option>
         <option value="date-asc">Date uploaded(ascending)</option>
         <option value="date-desc">Date uploaded(descending)</option>
         <option value="alphabetical">Alphabetical</option>
