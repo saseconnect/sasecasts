@@ -527,6 +527,7 @@ nav {
   border-radius: 3px;
   color: white;
   text-decoration: none;
+  border: none;
   background-color: #007bff;
 }
 
@@ -732,8 +733,8 @@ footer {
   border-radius: 3px;
   color: white;
   text-decoration: none;
-  background-color: #007bff;
   border: none;
+  background-color: #007bff;
 }
 
 .button--search:hover {
@@ -935,15 +936,73 @@ footer {
   margin-bottom: 10px;
 }
 
+.scroll-ctr {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.scroll {
+  padding-left: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 @media (min-width: 768px) {
-  .page-scroll {
-    width: 75%;
+  .scroll {
+    width: 25%;
   }
 }
 
 @media (min-width: 1440px) {
-  .page-scroll {
-    width: 45%;
+  .scroll {
+    width: 15%;
   }
+}
+
+[data-page] {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  text-align: center;
+}
+
+.scroll__btn:not([data-page]) {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 2rem;
+  color: red;
 }
 /*# sourceMappingURL=main.css.map */

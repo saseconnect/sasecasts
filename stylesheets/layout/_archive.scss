@@ -81,7 +81,6 @@
 
 .button--search{
   @include buttonTheme();
-  border: none;
 }
 
 .select{
@@ -178,7 +177,7 @@
 
 .entry__title{
   @include trebuchet;
-  @include margin(.1rem, auto);
+  @include margin(0.1rem, auto);
   font-size: 1.25rem;
 }
 
@@ -210,12 +209,40 @@
   @include margin(10px, 0px);
 }
 
-.page-scroll{
+.scroll-ctr{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll{
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: center;
 
   @include breakpoint-min($bp-sm){
-    width: 75%;
+    width: 25%;
   }
   @include breakpoint-min($bp-xl){
-    width: 45%;
+    width: 15%;
   }
+}
+
+[data-page]{
+  @include padding(5px, 5px);
+  @include margin(5px, 5px);
+  border: 1px solid black;
+  border-radius: 3px;
+  user-select: none;
+  text-align: center;
+}
+
+.scroll__btn:not([data-page]){
+  @include padding(0, 5px);
+  font-size: 2rem;
+  color: red;
 }
