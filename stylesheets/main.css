@@ -8,6 +8,7 @@ main {
   padding-left: 0;
   -webkit-transition: padding-left .3s ease-in;
   transition: padding-left .3s ease-in;
+  width: 100vw;
 }
 
 @media (min-width: 1024px) {
@@ -249,6 +250,7 @@ nav {
 
 @media (min-width: 768px) {
   .nav__list {
+    padding: 0;
     height: 100vh;
     width: 0;
     position: fixed;
@@ -283,6 +285,7 @@ nav {
 
 @media (min-width: 768px) {
   .js-toggle .nav__list {
+    padding-left: 10px;
     height: 100vh;
     width: 20rem;
   }
@@ -670,8 +673,11 @@ footer {
 @media (min-width: 768px) {
   .collapse-target {
     padding: 0;
-    width: 75%;
+    width: 80%;
     height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-flow: row nowrap;
@@ -754,10 +760,19 @@ footer {
 
 @media (min-width: 768px) {
   .select {
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .select {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
   }
 }
 

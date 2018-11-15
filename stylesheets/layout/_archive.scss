@@ -3,10 +3,11 @@
 // Filter Bar SCSS
 
 .filter-bar{
-  width:100%;
-  display:flex;
-  flex-flow:column nowrap;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
   justify-content: space-between;
+
 
   @include breakpoint-min($bp-sm){
     height: auto;
@@ -48,8 +49,9 @@
 
   @include breakpoint-min($bp-sm){
     padding: 0;
-    width: 75%;
+    width: 80%;
     height: auto;
+    align-items: center;
     flex-flow: row nowrap;
     justify-content: space-evenly;
   }
@@ -88,7 +90,10 @@
   @include padding(0.5rem, 0.5rem);
 
   @include breakpoint-min($bp-sm){
-    @include padding(0rem, 0rem);
+    @include padding(0.4rem, 0.4rem);
+  }
+  @include breakpoint-min($bp-md){
+    @include padding(0.4rem, 0.4rem);
   }
 }
 
