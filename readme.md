@@ -31,3 +31,7 @@ HTML and CSS classes elements are named with [Block Element Modifier](http://get
 
 - [Implementation Notes](docs/implementation-notes.md)
 - [index.html structure](docs/index-structure.md)
+
+## Links to check
+
+[Bootstrap docs on pagination](https://getbootstrap.com/docs/4.0/components/pagination/)

@@ -171,8 +171,13 @@
 .entry__thumb{
   width: 45%;
 }
-.entry__info{
+
+.info--video{
   width: 45%;
+}
+
+.info--audio{
+  width: 100%;
 }
 
 .entry__title{
@@ -209,12 +214,16 @@
   @include margin(10px, 0px);
 }
 
+
+// Scroller SCSS
+
 .scroll-ctr{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 
 .scroll{
   padding-left: 0;
@@ -245,4 +254,5 @@
   @include padding(0, 5px);
   font-size: 2rem;
   color: red;
+  align-self: flex-end;
 }
