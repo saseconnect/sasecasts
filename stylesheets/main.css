@@ -901,8 +901,12 @@ footer {
   width: 45%;
 }
 
-.entry__info {
+.info--video {
   width: 45%;
+}
+
+.info--audio {
+  width: 100%;
 }
 
 .entry__title {
@@ -1019,5 +1023,7 @@ footer {
   padding-bottom: 0;
   font-size: 2rem;
   color: red;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 /*# sourceMappingURL=main.css.map */
