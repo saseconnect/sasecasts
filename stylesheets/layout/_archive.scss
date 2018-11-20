@@ -219,6 +219,10 @@
   @include margin(10px, 0px);
 }
 
+.btn--sub{
+  @include buttonTheme();
+}
+
 
 // Scroller SCSS
 
