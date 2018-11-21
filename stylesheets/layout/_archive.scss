@@ -88,6 +88,7 @@
   @include padding(0.5rem, 0.5rem);
 
   @include breakpoint-min($bp-sm){
+    @include margin(3px, 3px);
     @include padding(0rem, 0rem);
   }
 }
@@ -131,10 +132,8 @@
   }
 }
 
+
 // Archive SCSS
-
-
-// Video Entry SCSS
 
 .archive{
   @include margin(0.5rem, auto);
@@ -151,9 +150,10 @@
     width: 50%;
   }
   @include breakpoint-min($bp-xl){
-    width: 28%;
+    width: 30%;
   }
 }
+
 
 .entry{
   @include margin(0.5rem, 0);
@@ -161,23 +161,8 @@
   width:100%;
 }
 
-.entry--video{
-  display: flex;
-  align-items: center;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-}
-
 .entry__thumb{
   width: 45%;
-}
-
-.info--video{
-  width: 45%;
-}
-
-.info--audio{
-  width: 100%;
 }
 
 .entry__title{
@@ -188,9 +173,11 @@
 
 .entry__date{
   @include margin(0.1rem, auto);
+  @include trebuchet;
 }
 
 .entry__text{
+  @include helvetica;
   display: none;
 
   @include breakpoint-min($bp-sm){
@@ -203,6 +190,7 @@
 }
 
 .entry__tag{
+  @include helvetica;
   color: orange;
 }
 
@@ -214,8 +202,53 @@
   @include margin(10px, 0px);
 }
 
+
+// Video Entry SCSS
+
+.info--video{
+  width: 45%;
+}
+
+.entry--video{
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+
+// Audio Entry SCSS
+
+.sub-group{
+  margin-top: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  @include breakpoint-min($bp-sm){
+    margin: 10px;
+    flex-flow: row nowrap;
+  }
+}
+
 .btn--sub{
   @include buttonTheme();
+  margin: 5px;
+  padding: 5px;
+  width: 173px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-icon{
+  padding-right: 5px;
+}
+
+.info--audio{
+  width: 100%;
 }
 
 
@@ -227,7 +260,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 .scroll{
   padding-left: 0;
