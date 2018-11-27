@@ -5,6 +5,7 @@
   <title>SASECasts Webinar</title>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="../stylesheets/main.css" type="text/css">
   <script src="../scripts/scripts.js" async></script>
 
@@ -13,11 +14,11 @@
 
 <body>
 
-  
+
 <nav id="nav">
 <header class="nav__header">
 
-  <div class="nav__burger" data-type="burger-collapse" data-target=".nav__list">
+  <div class="nav__burger" data-type="burger-collapse" data-target="#nav">
     <hr class="burger-line burger-line--ccw">
     <hr class="burger-line burger-line--center">
     <hr class="burger-line burger-line--cw">
@@ -25,34 +26,172 @@
   </div>
 
   <a class="nav__home" href="../index.html">
-    <img class="logo__img" src="../stylesheets/_layout/img/sase-logo.png">
+    <img class="logo-img" src="../stylesheets/layout/img/sase-logo.png">
   </a>
-  
+
   <h2 class="nav__heading">Welcome to SASECasts - SASE’s Digital Content Library</h2>
-  
+
 </header>
 
 <ul class="nav__list">
 
   <li class="nav__item">
-    <a href="webinar.html" class="nav__link">Breaking The Ceiling</a>
+    <a href="../listings-pages/webinar.html" class="nav__link">Breaking The Ceiling</a>
   </li>
-  
+
   <li class="nav__item">
-    <a href="casts.html" class="nav__link">SASE Moments</a>
+    <a href="../listings-pages/casts.html" class="nav__link">SASE Moments</a>
   </li>
-  
+
   <li class="nav__item">
     <a href="https://saseconnect.org/" class="nav__link">SASE Connect</a>
   </li>
-
 </ul>
-
 
 </nav>
 
 
 <main>
+  <section class="intro intro--vid-archive">
+
+    <div class="intro__card">
+      <h1 class="intro__heading heading--lg">SASE Casts</h1>
+
+      <p class="intro-paragraph">
+          Breaking The Ceiling is a webinar series focused on the creation and developmental training for the young professional. This series will hopefully provide you with new perspectives to carry with you throughout your careers.
+      </p>
+    </div>
+  </section>
+
+  <div class="filter-bar">
+    <div class="filter-coll" data-target=".collapse-target"> <!-- hidden on larger screens -->
+      <span class="filter-coll__text">
+        Browse For More.
+      </span>
+      <i class="fas fa-caret-down icon--sm"></i>
+    </div>
+
+    <div class="collapse-target">
+      <div class="search-ctr">
+        <input type="text" class="filter__search">
+
+        <button class="button--search">
+          search
+        </button>
+      </div>
+
+      <select class="select select--cat" name="category" id="category">
+        <option value="">Category</option>
+        <option class="cat-child" value="cat1">Career Talks</option>
+        <option value="cat2">Personal Development</option>
+        <option value="cat3">Just talking</option>
+      </select>
+
+      <select class="select select--dur" name="duration" id="duration">
+          <option value="">Duration</option>
+        <option value="30plus">< 30 minutes</option>
+        <option value="45plus">< 45 minutes</option>
+        <option value="60plus">< 60 minutes</option>
+      </select>
+    </div>
+
+
+    <div class="sort-filter">
+      <select class="select select--sort" name="sort-by" id="sort-by">
+        <option value="date-asc">Sort By</option>
+        <option value="date-asc">Date uploaded(ascending)</option>
+        <option value="date-desc">Date uploaded(descending)</option>
+        <option value="alphabetical">Alphabetical</option>
+      </select>
+    </div>
+
+
+  </div>
+
+  <hr class="spacer">
+
+  <section class="archive">
+
+    <div class="entry entry--video" data-index="1">
+      <img class="entry__thumb" src="" alt="video thumbnail">
+      <div class="info--video">
+        <h4 class="entry__title">video title</h4>
+        <h5 class="entry__date">01-23-45</h5>
+        <p class="entry__text">
+          video description lorem ipsum video description lorem ipsumvideo description lorem ipsum
+        </p>
+        <span class="row row--tags">
+          <a class="entry__tag" href="">Tag 2</a>
+          <a class="entry__tag"  href="">Tag 1</a>
+        </span>
+        <span class="row row--button">
+          <a class="button--std" href="">Share</a>
+          <a class="button--std" href="">Play</a>
+        </span>
+      </div>
+    </div>
+
+    <div class="entry entry--video" data-index="2">
+        <img class="entry__thumb" src="" alt="video thumbnail">
+        <div class="info--video">
+          <h4 class="entry__title">video title</h4>
+          <h5 class="entry__date">01-23-45</h5>
+          <p class="entry__text">
+            video description lorem ipsum video description lorem ipsumvideo description lorem ipsum
+          </p>
+          <span class="row row--tags">
+            <a class="entry__tag"  href="">Tag 2</a>
+            <a class="entry__tag"  href="">Tag 1</a>
+          </span>
+          <span class="row row--button">
+            <a class="button--std" href="">Share</a>
+            <a class="button--std" href="">Play</a>
+          </span>
+        </div>
+      </div>
+  </section>
+
+  <div class="scroll-ctr">
+      <ul class="scroll">
+        <li class="scroll__btn">
+          <a href="" id="prev">
+            <i class="fas fa-caret-left icon--sm"></i>
+          </a>
+        </li>
+
+        <li class="scroll__btn">
+          <a href=""  data-page="1">1</a>
+        </li>
+
+        <li class="scroll__btn">
+          <a href=""  data-page="2">2</a>
+        </li>
+
+        <li class="scroll__btn">
+            <a href=""  data-page="3">3</a>
+          </li>
+
+        <li class="scroll__btn">
+          <a href=""  data-page="4">4</a>
+        </li>
+
+        <li class="scroll__btn">
+            <a href=""  data-page="5">5</a>
+        </li>
+
+        <li class="scroll__btn">
+          <a href=""  data-page="6">6</a>
+        </li>
+
+        <li class="scroll__btn">
+          <a href="" id="next">
+            <i class="fas fa-caret-right icon--sm"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+
 
 </main>
 
@@ -60,9 +199,9 @@
 <footer>
   <!-- Footer SVGs are placeholders -->
 <div class="icon-row">
-  <img class="icon--sm" src="../img/circle-solid.svg">
-  <img class="icon--sm" src="../img/circle-solid.svg">
-  <img class="icon--sm" src="../img/circle-solid.svg">
+  <i class="fas fa-circle icon--sm"></i>
+  <i class="fas fa-circle icon--sm"></i>
+  <i class="fas fa-circle icon--sm"></i>
 </div>
 
 <p class="text--short">Copyright © 2018 
