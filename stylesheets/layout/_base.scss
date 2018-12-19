@@ -22,7 +22,7 @@ main{
 
 nav.js-toggle + main{
   @include breakpoint-min($bp-sm){
-    padding-left: 20rem;
+    padding-left: 17rem;
   }
 }
 

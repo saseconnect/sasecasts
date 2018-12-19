@@ -38,7 +38,6 @@ nav{
   }
 }
 
-
   // make this square
 .nav__burger{
   width: 40px;
@@ -116,44 +115,32 @@ nav{
 }
 
 .js-toggle .nav__list{
-  height: auto;
+  height: 8rem;
   width: 100%;
   transition: height 0.3s ease-in, width 0.3s ease-in;
   @include breakpoint-min($bp-sm){
     padding-left:10px;
     height: 100vh;
-    width: 20rem;
+    width: 17rem;
   }
 }
 
 .nav__item{
-  @include padding(0.675rem, 0);
+  @include margin(0.675rem, 0);
   height: 1.75rem;
-  width: auto;
+  min-width: 33vw;
   display: flex;
   align-items: center;
   text-align: center;
   overflow: hidden;
-  @include breakpoint-min($bp-sm){
-    width: 0;
-  }
-  @include breakpoint-min($bp-md){
-    @include margin(0, 0.75rem);
-    width: auto;
-  }
-
-}
-
-.js-toggle .nav__list>.nav__item{
-  @include padding(0.675rem, 0);
-  @include breakpoint-min($bp-sm){
-    width: auto;
+  @include breakpoint-min($bp-md) {
+    @include margin(0.675rem, 0.375rem);
+    min-width: auto;
   }
 }
 
 .nav__link{
   @include helvetica;
-  width: 100%;
   color: black;
   text-align: left;
   overflow: hidden;
