@@ -33,7 +33,6 @@ function filterCollapse(e) {
 }
 
 function readSelect(e) {
-  console.log(e.target.value);
   if (e.target.value === '') return;
 }
 
